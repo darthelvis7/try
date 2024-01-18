@@ -28,3 +28,11 @@ model User {
   posts         Post[]
   @@map(name: "users")
 }
+
+model Food {
+  id            String       @default(cuid()) @id
+  type          String
+  cost          String
+  healthy       Boolean
+}
+
